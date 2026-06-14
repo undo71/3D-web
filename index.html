@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>3D Animasyonlu Site</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- Arka plan partikülleri -->
+  <div class="bg-grid"></div>
+  <div class="particles" id="particles"></div>
+
+  <!-- NAV -->
+  <nav class="navbar">
+    <div class="logo">
+      <span class="logo-bracket">[</span>NEXUS<span class="logo-bracket">]</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#hero">Ana Sayfa</a></li>
+      <li><a href="#features">Özellikler</a></li>
+      <li><a href="#cards">Projeler</a></li>
+      <li><a href="#contact">İletişim</a></li>
+    </ul>
+    <div class="nav-glow"></div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="badge">⚡ YENİ NESİL DENEYIM</div>
+      <h1 class="hero-title">
+        <span class="line1">GELECEĞIN</span>
+        <span class="line2">WEB SİTESİ</span>
+      </h1>
+      <p class="hero-sub">3D animasyonlar, canlı efektler ve modern tasarım ile sizi geleceğe taşıyoruz.</p>
+      <div class="hero-btns">
+        <button class="btn-primary" onclick="scrollToSection('features')">Keşfet</button>
+        <button class="btn-secondary" onclick="scrollToSection('cards')">Projeler</button>
+      </div>
+    </div>
+
+    <!-- 3D Küp -->
+    <div class="cube-wrapper">
+      <div class="cube">
+        <div class="face front">NEXUS</div>
+        <div class="face back">2025</div>
+        <div class="face left">3D</div>
+        <div class="face right">WEB</div>
+        <div class="face top">∞</div>
+        <div class="face bottom">AI</div>
+      </div>
+    </div>
+
+    <!-- Floating orbs -->
+    <div class="orb orb1"></div>
+    <div class="orb orb2"></div>
+    <div class="orb orb3"></div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Aşağı Kaydır</span>
+    </div>
+  </section>
+
+  <!-- STATS BAR -->
+  <div class="stats-bar">
+    <div class="stat-item"><span class="stat-num" data-target="500">0</span><span>+ Proje</span></div>
+    <div class="stat-divider"></div>
+    <div class="stat-item"><span class="stat-num" data-target="98">0</span><span>% Müşteri Memnuniyeti</span></div>
+    <div class="stat-divider"></div>
+    <div class="stat-item"><span class="stat-num" data-target="12">0</span><span> Yıl Deneyim</span></div>
+    <div class="stat-divider"></div>
+    <div class="stat-item"><span class="stat-num" data-target="50">0</span><span>+ Ödül</span></div>
+  </div>
+
+  <!-- FEATURES -->
+  <section class="features" id="features">
+    <div class="section-header">
+      <span class="section-tag">// ÖZELLİKLER</span>
+      <h2>Neler Sunuyoruz?</h2>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card" data-delay="0">
+        <div class="feature-icon">⬡</div>
+        <div class="feature-glow"></div>
+        <h3>3D Animasyon</h3>
+        <p>CSS ve JavaScript ile güçlendirilmiş gerçek zamanlı 3D efektler ve geçişler.</p>
+        <div class="feature-line"></div>
+      </div>
+      <div class="feature-card" data-delay="100">
+        <div class="feature-icon">◈</div>
+        <div class="feature-glow"></div>
+        <h3>Hızlı Performans</h3>
+        <p>GPU hızlandırmalı animasyonlar ile 60fps akıcı kullanıcı deneyimi.</p>
+        <div class="feature-line"></div>
+      </div>
+      <div class="feature-card" data-delay="200">
+        <div class="feature-icon">⟁</div>
+        <div class="feature-glow"></div>
+        <h3>Responsive Tasarım</h3>
+        <p>Tüm ekran boyutlarında mükemmel görünüm ve işlev.</p>
+        <div class="feature-line"></div>
+      </div>
+      <div class="feature-card" data-delay="300">
+        <div class="feature-icon">⬢</div>
+        <div class="feature-glow"></div>
+        <h3>Modern Teknoloji</h3>
+        <p>En güncel web standartları ile geleceğe hazır kod tabanı.</p>
+        <div class="feature-line"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECT CARDS -->
+  <section class="cards-section" id="cards">
+    <div class="section-header">
+      <span class="section-tag">// PROJELER</span>
+      <h2>Öne Çıkan Çalışmalar</h2>
+    </div>
+    <div class="cards-grid">
+      <div class="project-card">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="card-number">01</div>
+            <div class="card-bg card-bg-1"></div>
+            <h3>Cyber Dashboard</h3>
+            <p>Gerçek zamanlı veri görselleştirme</p>
+            <span class="card-tag">React • D3.js</span>
+          </div>
+          <div class="card-back">
+            <h3>Detaylar</h3>
+            <ul>
+              <li>✓ 3D veri grafikleri</li>
+              <li>✓ Canlı güncelleme</li>
+              <li>✓ AI entegrasyonu</li>
+              <li>✓ Dark mode</li>
+            </ul>
+            <button class="card-btn">İncele →</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="card-number">02</div>
+            <div class="card-bg card-bg-2"></div>
+            <h3>Neon Commerce</h3>
+            <p>Futuristik e-ticaret platformu</p>
+            <span class="card-tag">Next.js • Three.js</span>
+          </div>
+          <div class="card-back">
+            <h3>Detaylar</h3>
+            <ul>
+              <li>✓ 3D ürün görünümü</li>
+              <li>✓ AR deneme özelliği</li>
+              <li>✓ Hızlı ödeme</li>
+              <li>✓ PWA desteği</li>
+            </ul>
+            <button class="card-btn">İncele →</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="card-number">03</div>
+            <div class="card-bg card-bg-3"></div>
+            <h3>Hologram UI</h3>
+            <p>Holografik arayüz sistemi</p>
+            <span class="card-tag">WebGL • GSAP</span>
+          </div>
+          <div class="card-back">
+            <h3>Detaylar</h3>
+            <ul>
+              <li>✓ Hologram efektleri</li>
+              <li>✓ Ses kontrolü</li>
+              <li>✓ Hareket sensörü</li>
+              <li>✓ VR uyumlu</li>
+            </ul>
+            <button class="card-btn">İncele →</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="contact-glow"></div>
+    <div class="section-header">
+      <span class="section-tag">// İLETİŞİM</span>
+      <h2>Projenizi Hayata Geçirelim</h2>
+    </div>
+    <div class="contact-form">
+      <div class="input-group">
+        <input type="text" placeholder="Adınız" class="cyber-input" />
+        <div class="input-line"></div>
+      </div>
+      <div class="input-group">
+        <input type="email" placeholder="E-posta" class="cyber-input" />
+        <div class="input-line"></div>
+      </div>
+      <div class="input-group">
+        <textarea placeholder="Mesajınız..." class="cyber-input cyber-textarea"></textarea>
+        <div class="input-line"></div>
+      </div>
+      <button class="btn-primary btn-send">
+        <span>GÖNDER</span>
+        <div class="btn-shine"></div>
+      </button>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="logo"><span class="logo-bracket">[</span>NEXUS<span class="logo-bracket">]</span></div>
+      <p>© 2025 Nexus. Geleceği Bugünden İnşa Ediyoruz.</p>
+      <div class="footer-links">
+        <a href="#">GitHub</a>
+        <a href="#">Twitter</a>
+        <a href="#">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
